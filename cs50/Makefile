@@ -2,14 +2,13 @@ include makefiles/config.mk
 
 BUILD_DIR ?= build
 
-# Usage:
-#   make build SRC=path/to/program.c
-#   make run   SRC=path/to/program.c
+# Usage (run from inside cs50/):
+#   make build SRC=week_1/005_meow/me.c
+#   make run   SRC=week_1/005_meow/me.c
 #
 # Optional:
 #   OUT=build/myname
 
-# If OUT isn't provided, put the binary in build/ and name it after the .c file.
 OUT ?= $(BUILD_DIR)/$(notdir $(basename $(SRC)))
 
 .PHONY: build run clean
@@ -24,3 +23,4 @@ run: build
 
 clean:
 	rm -rf "$(BUILD_DIR)"
+
