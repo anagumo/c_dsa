@@ -16,3 +16,6 @@ calculator
 
 #cursor
 .cursor/
+
+#macos
+.DS_Store
