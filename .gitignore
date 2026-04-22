@@ -1,0 +1,18 @@
+# Build outputs
+build/
+*.dSYM/
+
+# Common C binaries
+a.out
+*.out
+
+# CS50 exercises often compile to these names
+mario
+hello
+agree
+compare
+meow
+calculator
+
+#cursor
+.cursor/
